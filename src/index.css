@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0f;
+  --surface: #0f1117;
+  --card: #151821;
+  --border: rgba(255, 255, 255, 0.08);
+  --primary: #3b82f6;
+  --accent: #06b6d4;
+  --text-primary: #f8fafc;
+  --text-muted: #94a3b8;
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+}
+
+.light, [data-theme="light"] {
+  --background: #ffffff;
+  --surface: #f8fafc;
+  --card: #ffffff;
+  --border: rgba(15, 23, 42, 0.08);
+  --primary: #2563eb;
+  --accent: #0891b2;
+  --text-primary: #0f172a;
+  --text-muted: #64748b;
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  overflow-x: hidden;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+}
+
+.light .glass, [data-theme="light"] .glass {
+  background: rgba(15, 23, 42, 0.03);
+  border: 1px solid var(--border);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Flower animation stages */
+@keyframes sprout-grow {
+  0% { transform: scale(0.5) translateY(10px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+@keyframes bloom-grow {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes wilt-droop {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(12deg) translateY(2px); }
+}
+
+@keyframes float-particle {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  50% { opacity: 0.8; }
+  100% { transform: translateY(-80px) translateX(var(--x, 15px)); opacity: 0; }
+}
+
+.animate-sprout {
+  animation: sprout-grow 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-bloom {
+  animation: bloom-grow 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.wilt {
+  animation: wilt-droop 1.5s ease forwards;
+}
+
+.sparkle-particle {
+  position: absolute;
+  pointer-events: none;
+  background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: float-particle 1.5s ease-out forwards;
+}
+
+/* Typing animation for AI */
+@keyframes dot-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.dot-bounce {
+  animation: dot-bounce 1s infinite ease-in-out;
+}
+.dot-bounce:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.dot-bounce:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* FIX 1 — White/light background in input fields */
+input, textarea, select {
+  background-color: #1a1a2e !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #06b6d4 !important; /* cyan/blue accent */
+  outline: none !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Date picker calendar icon inversion for dark readability */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* FIX 1 — Login/Autofill input background fix */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #1a1a2e inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+
+/* Auth / Registration pages inputs transparent background and white text overrides */
+.auth-page input,
+.registration-page input,
+.auth-input-override input {
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+/* Flashcard Flip CSS */
+.flip-card {
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+.flip-card-flipped {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+
