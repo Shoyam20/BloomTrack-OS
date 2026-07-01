@@ -147,8 +147,3 @@ Try these prompts:
 
 **Track:** Agents for Good
 
----
-
-## 📄 License
-
-MIT License
