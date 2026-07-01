@@ -143,7 +143,7 @@ Try these prompts:
 
 ## 👥 Team
 
-**Team:** Agent Blue
+**Team:** Agent Bloom
 
 **Track:** Agents for Good
 
