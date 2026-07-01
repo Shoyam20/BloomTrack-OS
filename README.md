@@ -1,11 +1,12 @@
-🌸 BloomTrack AI OS
+# 🌸 BloomTrack AI OS
 
-**An AI-powered Learning Operating System built with Google Gemini, Multi-Agent Architecture, and the Model Context Protocol (MCP).**
+> **An AI-powered Learning Operating System built with Google Gemini, Multi-Agent Architecture, and the Model Context Protocol (MCP).**
 
 BloomTrack AI OS helps students plan, learn, stay organized, and stay motivated through intelligent AI agents. Instead of using multiple disconnected applications, BloomTrack provides a unified AI-powered workspace that automates study planning, resource management, progress tracking, and personalized learning.
 
+---
 
-✨ Features
+## ✨ Features
 
 - 🤖 Multi-Agent AI System
 - 📚 AI Study Planner
@@ -18,19 +19,21 @@ BloomTrack AI OS helps students plan, learn, stay organized, and stay motivated 
 - 📊 Dashboard & Analytics
 - 🎯 Adaptive Recommendations
 
+---
 
-🧠 Multi-Agent Architecture
+## 🧠 Multi-Agent Architecture
 
 BloomTrack uses specialized AI agents working together:
 
-**Coordinator Agent** – Understands user intent and orchestrates workflows.
-**Planner Agent** – Creates study plans, goals, and schedules.
-**Tutor Agent** – Explains concepts and guides learning.
-**Resource Agent** – Recommends curated learning resources.
-**Motivation Agent** – Awards XP, coins, and updates the Bloom Garden.
+- **Coordinator Agent** – Understands user intent and orchestrates workflows.
+- **Planner Agent** – Creates study plans, goals, and schedules.
+- **Tutor Agent** – Explains concepts and guides learning.
+- **Resource Agent** – Recommends curated learning resources.
+- **Motivation Agent** – Awards XP, coins, and updates the Bloom Garden.
 
+---
 
-🔌 MCP Integration
+## 🔌 MCP Integration
 
 BloomTrack demonstrates practical use of the **Model Context Protocol (MCP)** through tools for:
 
@@ -41,8 +44,9 @@ BloomTrack demonstrates practical use of the **Model Context Protocol (MCP)** th
 - Progress Tracking
 - Workspace Synchronization
 
+---
 
-🏗️ Architecture
+## 🏗️ Architecture
 
 ```mermaid
 graph TD
@@ -61,8 +65,9 @@ graph TD
     Workspace --> Frontend
 ```
 
+---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 **Frontend**
 - React
@@ -81,7 +86,9 @@ graph TD
 - Multi-Agent System
 - MCP Server
 
-🚀 Installation
+---
+
+## 🚀 Installation
 
 ```bash
 git clone https://github.com/yourusername/BloomTrack-AI-OS.git
@@ -111,7 +118,7 @@ GEMINI_API_KEY=YOUR_API_KEY
 
 ---
 
-🎥 Demo Prompts
+## 🎥 Demo Prompts
 
 Try these prompts:
 
@@ -121,8 +128,9 @@ Try these prompts:
 - Schedule my fitness routine
 - What should I focus on today?
 
+---
 
-🎯 Google AI Concepts Demonstrated
+## 🎯 Google AI Concepts Demonstrated
 
 - ✅ Google Gemini
 - ✅ Multi-Agent Architecture
@@ -131,9 +139,16 @@ Try these prompts:
 - ✅ Adaptive Learning
 - ✅ AI Workspace Automation
 
+---
 
-👥 Team
+## 👥 Team
 
-**Team:** Agent Bloom
+**Team:** Agent Blue
 
 **Track:** Agents for Good
+
+---
+
+## 📄 License
+
+MIT License
