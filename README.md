@@ -111,7 +111,105 @@ Try these prompts:
 
 ---
 
-Website URL :https://bloom-track-os.vercel.app
+# 🚀 Setup Instructions
+
+Follow these steps to run **BloomTrack AI OS** locally.
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/BloomTrack-OS.git
+cd BloomTrack-OS
+```
+
+---
+
+## 2. Install Frontend Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 3. Install Backend Dependencies
+
+```bash
+cd backend
+npm install
+cd ..
+```
+
+---
+
+## 4. Configure Environment Variables
+
+Create a `.env` file inside the **backend** folder.
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+PORT=3001
+```
+
+Replace `YOUR_GEMINI_API_KEY` with your Google Gemini API key.
+
+---
+
+## 5. Start the Backend Server
+
+```bash
+cd backend
+node server.js
+```
+
+The backend will run on:
+
+```
+http://localhost:3001
+```
+
+---
+
+## 6. Start the Frontend
+
+Open a new terminal and run:
+
+```bash
+npm run dev
+```
+
+The frontend will run on:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 7. Open the Application
+
+Open your browser and visit:
+
+```
+http://localhost:5173
+```
+
+BloomTrack AI OS is now ready to use.
+
+---
+
+## 🌐 Live Demo
+
+**Website:** https://bloom-track-os.vercel.app
+
+---
+
+## 📌 Requirements
+
+- Node.js v18 or later
+- npm
+- Google Gemini API Key
+- Modern web browser (Chrome, Edge, Firefox)
 
 ---
 
