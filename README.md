@@ -1,8 +1,8 @@
-# 🌸 BloomTrack AI OS
+# 🌸 BloomTrack OS
 
 > **An AI-powered Learning Operating System built with Google Gemini, Multi-Agent Architecture, and the Model Context Protocol (MCP).**
 
-BloomTrack AI OS helps students plan, learn, stay organized, and stay motivated through intelligent AI agents. Instead of using multiple disconnected applications, BloomTrack provides a unified AI-powered workspace that automates study planning, resource management, progress tracking, and personalized learning.
+BloomTrack OS helps students plan, learn, stay organized, and stay motivated through intelligent AI agents. Instead of using multiple disconnected applications, BloomTrack provides a unified AI-powered workspace that automates study planning, resource management, progress tracking, and personalized learning.
 
 ---
 
@@ -85,36 +85,6 @@ graph TD
 **Architecture**
 - Multi-Agent System
 - MCP Server
-
----
-
-## 🚀 Installation
-
-```bash
-git clone https://github.com/yourusername/BloomTrack-AI-OS.git
-
-cd BloomTrack-AI-OS
-
-npm install
-
-cd backend
-
-npm install
-
-node server.js
-```
-
-Start the frontend:
-
-```bash
-npm run dev
-```
-
-Create a `.env` file:
-
-```env
-GEMINI_API_KEY=YOUR_API_KEY
-```
 
 ---
 
