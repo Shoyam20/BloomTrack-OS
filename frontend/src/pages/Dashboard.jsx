@@ -22,6 +22,8 @@ import {
   isSameMonth
 } from 'date-fns'
 
+const API_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:3001";
+
 export default function Dashboard() {
   const {
     goals,
@@ -107,7 +109,7 @@ export default function Dashboard() {
         learningHub: state.learningHub
       }
 
-      const res = await fetch('http://localhost:3001/api/recommendations', {
+      const res = await fetch(`${API_URL}/api/recommendations`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

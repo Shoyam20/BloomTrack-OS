@@ -1,5 +1,5 @@
 import { useStore } from '../store/useStore'
-
+const API_URL = import.meta.env.VITE_BACKEND_URL;
 // Document API usage constraints
 // API_ALLOWED_SURFACES = ['ai-chief-of-staff-chat', 'learning-hub-tutor-chat']
 
@@ -99,7 +99,7 @@ Always ask clarifying questions if the user's request is vague. Be encouraging a
       const controller = new AbortController()
       const timeoutId = setTimeout(() => controller.abort(), 30000)
 
-      const backendResponse = await fetch('http://localhost:3001/api/chat', {
+      const backendResponse = await fetch(`${API_URL}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
