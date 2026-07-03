@@ -20,51 +20,11 @@ BloomTrack OS helps students plan, learn, stay organized, and stay motivated thr
 - 🎯 Adaptive Recommendations
 
 ---
-
-## 🧠 Multi-Agent Architecture
-
-BloomTrack uses specialized AI agents working together:
-
-- **Coordinator Agent** – Understands user intent and orchestrates workflows.
-- **Planner Agent** – Creates study plans, goals, and schedules.
-- **Tutor Agent** – Explains concepts and guides learning.
-- **Resource Agent** – Recommends curated learning resources.
-- **Motivation Agent** – Awards XP, coins, and updates the Bloom Garden.
-
----
-
-## 🔌 MCP Integration
-
-BloomTrack demonstrates practical use of the **Model Context Protocol (MCP)** through tools for:
-
-- Goal Management
-- Task Management
-- Calendar Scheduling
-- Resource Management
-- Progress Tracking
-- Workspace Synchronization
-
----
-
 ## 🏗️ Architecture
-
-```mermaid
-graph TD
-    User --> Frontend
-    Frontend --> Coordinator
-    Coordinator --> Gemini
-    Coordinator --> Planner
-    Coordinator --> Tutor
-    Coordinator --> Resource
-    Coordinator --> Motivation
-    Planner --> MCP
-    Tutor --> MCP
-    Resource --> MCP
-    Motivation --> MCP
-    MCP --> Workspace
-    Workspace --> Frontend
-```
-
+    <img width="1162" height="778" alt="image" src="https://github.com/user-attachments/assets/1ad00191-776a-480f-b65d-a66687a83e3c" />
+---
+## 🏗️ Workspace Dashboard
+    <img width="1280" height="875" alt="image" src="https://github.com/user-attachments/assets/07985c18-b5d0-41e2-bf95-e0c2fd1ee323" />
 ---
 
 ## 🛠️ Tech Stack
