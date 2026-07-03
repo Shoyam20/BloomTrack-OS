@@ -21,10 +21,12 @@ BloomTrack OS helps students plan, learn, stay organized, and stay motivated thr
 
 ---
 ## 🏗️ Architecture
-    <img width="1162" height="778" alt="image" src="https://github.com/user-attachments/assets/1ad00191-776a-480f-b65d-a66687a83e3c" />
----
-## 🏗️ Workspace Dashboard
-    <img width="1280" height="875" alt="image" src="https://github.com/user-attachments/assets/07985c18-b5d0-41e2-bf95-e0c2fd1ee323" />
+
+![Architecture](assets/architecture.png)
+
+## 🖥️ Workspace Dashboard
+
+![Dashboard](assets/dashboard.png)
 ---
 
 ## 🛠️ Tech Stack
