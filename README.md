@@ -20,13 +20,22 @@ BloomTrack OS helps students plan, learn, stay organized, and stay motivated thr
 - 🎯 Adaptive Recommendations
 
 ---
-## 🏗️ Architecture
+## 🏗️ Multi-Agent Architecture
 
-![Architecture](assets/architecture.png)
+<h2>🏗️ Architecture</h2>
+
+<p align="center">
+  <img src="assets/architecture.png" width="900">
+</p>
 
 ## 🖥️ Workspace Dashboard
 
-![Dashboard](assets/dashboard.png)
+<h2>🏗️ Architecture</h2>
+
+<p align="center">
+  <img src="assets/dashboard.png" width="900">
+</p>
+
 ---
 
 ## 🛠️ Tech Stack
@@ -45,8 +54,8 @@ BloomTrack OS helps students plan, learn, stay organized, and stay motivated thr
 - Google Gemini 2.5 Flash
 
 **Architecture**
-- Multi-Agent System
-- MCP Server
+- Multi-Agent Architecture
+- Model Context Protocol (MCP)  
 
 ---
 
@@ -163,6 +172,13 @@ BloomTrack AI OS is now ready to use.
 ## 🌐 Live Demo
 
 **Website:** https://bloom-track-os.vercel.app
+
+---
+
+## 💻 Source Code
+
+GitHub Repository:
+https://github.com/Shoyam20/BloomTrack-OS
 
 ---
 
