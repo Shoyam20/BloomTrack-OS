@@ -34,8 +34,7 @@ export default function Modal({ isOpen, onClose, title, children, className = ''
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className={`relative z-10 w-full max-w-lg border border-borderColor rounded-lg p-6 shadow-xl ${className}`}
-            style={{ backgroundColor: '#171A23', opacity: 1 }}
+            className={`relative z-10 w-full max-w-lg border border-borderColor rounded-lg bg-card p-6 shadow-xl glass ${className}`}
           >
             {/* Header */}
             <div className="flex items-center justify-between pb-4 border-b border-borderColor mb-4">

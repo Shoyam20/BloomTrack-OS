@@ -9,7 +9,7 @@ export default function CommandPalette() {
   const [query, setQuery] = useState('')
   const [recentSearches, setRecentSearches] = useState([])
   const [selectedIndex, setSelectedIndex] = useState(0)
-
+  
   const navigate = useNavigate()
   const inputRef = useRef(null)
 
@@ -155,7 +155,7 @@ export default function CommandPalette() {
     <AnimatePresence>
       {searchOpen && (
         <div className="fixed inset-0 z-50 flex items-start justify-center pt-[15vh] px-4">
-
+          
           {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -171,8 +171,7 @@ export default function CommandPalette() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -20, scale: 0.98 }}
             transition={{ duration: 0.15 }}
-            className="relative z-10 w-full max-w-2xl border border-borderColor rounded-xl shadow-2xl overflow-hidden flex flex-col"
-            style={{ backgroundColor: '#171A23', opacity: 1 }}
+            className="relative z-10 w-full max-w-2xl border border-borderColor rounded-xl bg-card shadow-2xl glass overflow-hidden flex flex-col"
           >
             {/* Input Row */}
             <div className="flex items-center gap-3 px-4 py-3 border-b border-borderColor">
@@ -240,10 +239,11 @@ export default function CommandPalette() {
                       <div
                         key={item.id}
                         onClick={() => handleSelect(item)}
-                        className={`flex items-center justify-between px-3 py-2.5 rounded-md cursor-pointer transition-all duration-100 ${isSelected
+                        className={`flex items-center justify-between px-3 py-2.5 rounded-md cursor-pointer transition-all duration-100 ${
+                          isSelected
                             ? 'bg-primary/10 border-l-2 border-primary pl-2'
                             : 'hover:bg-surface/50 border-l-2 border-transparent'
-                          }`}
+                        }`}
                       >
                         <div className="flex items-center gap-3">
                           <div className={`p-1.5 rounded-md bg-surface border border-borderColor ${isSelected ? 'text-primary' : ''}`}>
