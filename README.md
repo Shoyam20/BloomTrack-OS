@@ -84,7 +84,7 @@ Try these prompts:
 
 # 🚀 Setup Instructions
 
-Follow these steps to run **BloomTrack AI OS** locally.
+Follow these steps to run **BloomTrack OS** locally.
 
 ## 1. Clone the Repository
 
@@ -165,7 +165,7 @@ Open your browser and visit:
 http://localhost:5173
 ```
 
-BloomTrack AI OS is now ready to use.
+BloomTrack OS is now ready to use.
 
 ---
 
